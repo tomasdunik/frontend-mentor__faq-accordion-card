@@ -1,0 +1,71 @@
+@import './partials/variables', './partials/functions';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient($color-violet-soft, $color-blue-soft);
+  display: flex;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.website {
+  background-color: #fff;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: 1260% 65%;
+  background-repeat: no-repeat;
+  border-radius: 2.3rem;
+  box-shadow: 0 50px 50px -20px #35127a7d;
+  display: flex;
+  height: 50.9rem;
+  justify-content: space-between;
+  padding: 6.4rem 9.5rem 8.4rem 0;
+  position: relative;
+  width: 92rem;
+}
+
+/***********************************************************/
+/*************** GENERAL REUSABLE COMPONENTS ***************/
+/***********************************************************/
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.link {
+  color: inherit;
+}
+.link:hover {
+  color: $color-blue-very-dark-grayish;
+}
+
+.show {
+  display: inline-block !important;
+  margin-top: 1rem;
+}
+
+///////////////////////////////
+// @media (max-width: 1020px)
+///////////////////////////////
+@media (max-width: 1020px) {
+  .website {
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-position: top;
+    flex-direction: column;
+    height: 53.5rem;
+    justify-content: flex-start;
+    margin-bottom: 8.5rem;
+    margin-top: 8rem;
+    padding: 0;
+    width: 32.7rem;
+  }
+}
